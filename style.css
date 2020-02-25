@@ -12,7 +12,7 @@ a {
 	color: black;
 }
 
-.nav-link:hover {
+.nav-link:hover, .navbar-brand:hover, .scroll:hover {
 	color: #ff5757!important;
 }
 
@@ -98,10 +98,6 @@ img {
 
 .btn-light:hover {
 	background-color: #ff5757;
-}
-
-.scroll:hover {
-	color: #ff5757;
 }
 
 .spacer {
