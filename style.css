@@ -1,0 +1,130 @@
+body {
+	background-color: white;
+}
+
+#wrapper {
+	overflow-x: hidden;
+	position: relative;
+}
+
+a {
+	cursor: pointer;
+	color: black;
+}
+
+.nav-link:hover {
+	color: #ff5757!important;
+}
+
+#intro {
+    padding-top: 20%;
+}
+
+.navbar {
+	background-color: white; 
+}
+
+img {
+	max-width: 500px;
+}
+  
+.overlay {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 500px;
+	max-height: 500px;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #ff5757;
+	text-align: center;
+}
+
+.overlay a {
+	position: absolute;
+	top: 50%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.overlay a {
+	color: black;
+	font-family: 'Josefin Sans';
+	font-size: 2rem;
+	font-weight: 500;
+	text-decoration: none;
+	opacity: 1;
+}
+
+.showcase-container {
+	max-width: 500px;
+	margin: auto;
+}
+  
+.showcase-container:hover .overlay {
+	opacity: 0.8;
+}
+
+.fab {
+	font-size: 20px;
+	color: black;
+}
+
+.navbar-brand {
+	color: black;
+	font-family: 'Josefin Sans';
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.main-nav {
+	font-family: 'Josefin Sans';
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.btn-light {
+	color: black;
+	background-color: white;
+	border-color: black;
+	font-family: 'Josefin Sans';
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.btn-light:hover {
+	background-color: #ff5757;
+}
+
+.scroll:hover {
+	color: #ff5757;
+}
+
+.spacer {
+	height: 100px;
+}
+
+.social-icons {
+	display: inline;
+	padding: 0;
+}
+
+.social-icons li {
+	display: inline;
+}
+
+@media (max-width: 600px) {
+	body {
+		overflow-x: hidden;
+	}
+	img, .overlay, .showcase-container {
+		max-width: 300px;
+	}
+	.spacer {
+		max-height: 50px;
+	}
+}

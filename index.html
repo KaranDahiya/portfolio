@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3f47226ce1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="wrapper">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+
+        <!-- brand -->
+        <a class="navbar-brand" onclick="scrollToHome()">PORTFOLIO</a>
+
+        <!-- collapsible toggler button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars" style="color:black; font-size:28px;"></i>
+            </span>
+        </button>
+
+        <!-- navigation links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link main-nav" onclick="scrollToWork()"">WORK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main-nav" onclick="scrollToContact()">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <div style="height:200px" id="scrollHomeTarget"></div>
+    <div class="container-fluid">
+
+        <!-- HOME -->
+        <div class="row justify-content-center align-items-center">
+            <!-- logo -->
+            <div class="col text-center" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="images/logo_square_red.png" class="img-responsive" id="logoImage" alt="logo">
+            </div>
+        </div>
+
+        <!-- SCROLL to WORK -->
+        <div style="height:100px"></div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col text-center">
+                <button type="button" class="btn btn-light" onclick="scrollToWork()">PROJECTS</button>
+            </div>
+        </div>
+        <div style="height:100px"></div>
+
+        <hr/>
+
+        <!-- WORK I -->
+        <div class="spacer" id="scrollWorkTarget"></div>
+        <div class="row align-items-center">
+            <!-- title text -->
+            <div class="col text-center" data-aos="fade-right" data-aos-duration="3000">
+                <img src="images/sketchbook_title.png" class="img-responsive" alt="work">
+            </div>
+            <!-- Digital Sketchbook -->
+            <div class="col text-center" data-aos="fade-left" data-aos-duration="3000">
+                <div class="showcase-container">
+                    <img src="images/sketchbook_screenshot.png" class="img-responsive showcase" alt="digital sketchbook">
+                    <div class="overlay">
+                        <a href="https://karandahiya.github.io/sketchbook/" target="_blank">
+                            <h2>SHOW ME</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- WORK II -->
+        <div class="spacer"></div>
+        <div class="row align-items-center">
+            <!-- title text -->
+            <div class="col text-center" data-aos="fade-right" data-aos-duration="3000">
+                <img src="images/solar_title.png" class="img-responsive" alt="work">
+            </div>
+            <!-- Solar Panel Tracker -->
+            <div class="col text-center" data-aos="fade-left" data-aos-duration="3000">
+                <div class="showcase-container">
+                    <img src="images/solar.jpeg" class="img-responsive showcase" alt="solar panel tracker">
+                    <div class="overlay">
+                        <a href="https://github.com/KaranDahiya/Solar-Panel-Moving-Platform" target="_blank">
+                            <h2>SHOW ME</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <hr/>
+
+        <!-- WORK III -->
+        <div class="spacer"></div>
+        <div class="row align-items-center">
+            <!-- title text -->
+            <div class="col text-center" data-aos="fade-right" data-aos-duration="3000">
+                <img src="images/stoic_title.png" class="img-responsive" alt="work">
+            </div>
+            <!-- Stoic Chrome Extension -->
+            <div class="col text-center" data-aos="fade-left" data-aos-duration="3000">
+                <div class="showcase-container">
+                    <img src="images/stoic_screenshot.png" class="img-responsive showcase" alt="chrome extension">
+                    <div class="overlay">
+                        <a href="https://github.com/KaranDahiya/Stoic-chrome-extension" target="_blank">
+                            <h2>SHOW ME</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- CONTACT -->
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="row align-items-center" id="scrollContactTarget">
+            <!-- name and subtitle section -->
+            <div class="col text-center" data-aos="flip-down" data-aos-duration="2000">
+                <img src="images/logo_slash_red.png" class="img-responsive" id="aboutImage" alt="about picture">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <!-- social media icons -->
+            <div class="col text-center">
+                <ul class="social-icons">
+                    <li class="nav-item">
+                        <a class="nav-link fab fa-github" target="_blank" href="https://github.com/KaranDahiya"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fab fa-linkedin" target="_blank" href="https://www.linkedin.com/in/karan-dahiya-aabb7b164"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="spacer"></div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
