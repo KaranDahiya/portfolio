@@ -26,7 +26,7 @@ function scrollToHome() {
 const introText = "karan." + "dahiya." + "portfolio." + "welcome.";
 var i = 0;
 speed = 125;
-typewriter();
+setTimeout(typewriter, 1000);
 
 function typewriter() {
   if(i < introText.length) {

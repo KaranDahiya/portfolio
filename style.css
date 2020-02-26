@@ -107,6 +107,14 @@ img {
 	height: 100px;
 }
 
+.contact {
+	color: black;
+	font-family: 'Josefin Sans';
+	font-size: 2rem;
+	font-weight: 600;
+	letter-spacing: .15em;
+}
+
 .social-icons {
 	display: inline;
 	padding: 0;
@@ -135,7 +143,10 @@ img {
 	.intro-spacer {
 		max-height: 200px;
 	}
+}
+
+@media (max-height: 600px) {
 	.fa-chevron-down {
-		visibility: hidden;
+		visibility: hidden!important;
 	}
 }
