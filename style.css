@@ -1,5 +1,7 @@
-body {
-	background-color: white;
+body, html, .container-fluid {
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 #wrapper {
@@ -9,19 +11,26 @@ body {
 
 a {
 	cursor: pointer;
-	color: black;
 }
 
 .nav-link:hover, .navbar-brand:hover, .scroll:hover, .fas:hover {
 	color: #ff5757!important;
 }
 
-#intro {
-    padding-top: 20%;
+.intro {
+    color: white;
+	font-family: 'Josefin Sans';
+	font-size: 5rem;
+	font-weight: 600;
 }
 
-.navbar {
-	background-color: white; 
+#parallax {
+	background-image: url("images/purple_sky_background.jpg");
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 img {
@@ -82,9 +91,10 @@ img {
 }
 
 .main-nav {
+	color: black;
 	font-family: 'Josefin Sans';
-	font-size: 1rem;
-	font-weight: 300;
+	font-size: 1.25rem;
+	font-weight: 500;
 }
 
 .spacer {
@@ -109,5 +119,17 @@ img {
 	}
 	.spacer {
 		max-height: 50px;
+	}
+	#parallax {
+		background-attachment: scroll;
+	}
+	.intro {
+		font-size: 3rem;
+	}
+	.intro-spacer-top {
+		max-height: 150px;
+	}
+	.fa-chevron-down {
+		visibility: hidden;
 	}
 }
