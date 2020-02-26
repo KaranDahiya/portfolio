@@ -21,3 +21,21 @@ function scrollToHome() {
     behavior: 'smooth' 
   });
 }
+
+// typewriter effect
+const introText = "karan." + "dahiya." + "portfolio." + "welcome.";
+var i = 0;
+speed = 125;
+typewriter();
+
+function typewriter() {
+  if(i < introText.length) {
+    document.querySelector('.typewriter').innerHTML += introText.charAt(i);
+    if(introText.charAt(i) == '.' && i != introText.length - 1)
+      document.querySelector('.typewriter').innerHTML += "<br>";
+    i++;
+    setTimeout(typewriter, speed);
+  }
+  else 
+    document.querySelector('.fa-chevron-down').style.visibility = "visible";
+}

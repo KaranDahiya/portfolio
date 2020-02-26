@@ -22,6 +22,8 @@ a {
 	font-family: 'Josefin Sans';
 	font-size: 5rem;
 	font-weight: 600;
+	letter-spacing: .15em;
+	min-height: 300px;
 }
 
 #parallax {
@@ -83,6 +85,10 @@ img {
 	color: black;
 }
 
+.fa-chevron-down {
+	visibility: hidden;
+}
+
 .navbar-brand {
 	color: black;
 	font-family: 'Josefin Sans';
@@ -126,8 +132,8 @@ img {
 	.intro {
 		font-size: 3rem;
 	}
-	.intro-spacer-top {
-		max-height: 150px;
+	.intro-spacer {
+		max-height: 200px;
 	}
 	.fa-chevron-down {
 		visibility: hidden;
