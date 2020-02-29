@@ -145,7 +145,7 @@ img {
 	}
 }
 
-@media (max-height: 600px) {
+@media (max-height: 650px) {
 	.fa-chevron-down {
 		visibility: hidden!important;
 	}
