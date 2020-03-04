@@ -38,6 +38,10 @@ a {
 img {
 	max-width: 500px;
 }
+
+.project-title {
+	max-width: 400px;
+}
   
 .overlay {
 	margin: auto;
@@ -49,6 +53,7 @@ img {
 	max-width: 500px;
 	max-height: 500px;
 	opacity: 0;
+	visibility: hidden;
 	transition: .5s ease;
 	background-color: #ff5757;
 	text-align: center;
@@ -56,17 +61,14 @@ img {
 
 .overlay a {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	bottom: 0;
 	left: 0;
 	right: 0;
-}
-
-.overlay a {
 	color: black;
-	font-family: 'Josefin Sans';
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: .1em;
 	font-size: 2rem;
-	font-weight: 500;
 	text-decoration: none;
 	opacity: 1;
 }
@@ -77,7 +79,8 @@ img {
 }
   
 .showcase-container:hover .overlay {
-	opacity: 0.8;
+	opacity: 1;
+	visibility: visible;
 }
 
 .fab, .fas {
@@ -130,6 +133,9 @@ img {
 	}
 	img, .overlay, .showcase-container {
 		max-width: 300px;
+	}
+	.project-title {
+		max-width: 200px;
 	}
 	.spacer {
 		max-height: 50px;
