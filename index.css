@@ -1,0 +1,171 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+i {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* BACKGROUND STYLING */
+
+.container {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container img {
+    position: absolute;
+    left: -5%;
+    top: 0;
+    height: 120%;
+    width: 120%;
+    object-fit: cover;
+    z-index: 1;
+    mix-blend-mode: screen;
+    opacity: 0;
+    animation: reveal 1s ease forwards, swing 2s ease-in-out infinite 2s alternate;
+}
+
+.container video {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: reveal 3s ease 1s forwards;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes swing {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-3deg);
+    }
+}
+
+/* @media (max-width:1200px) {
+    .container img {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        animation: reveal 1s ease forwards
+    }
+    
+    .container video {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        animation: reveal 3s ease 1s forwards;
+    }
+} */
+
+/* FOREGROUND STYLING */
+
+.intro, .contact {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    width: 100%;
+}
+
+.intro {
+    top: 15vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact {
+    bottom: 3vh;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 10vw;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+}
+
+.contact p {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+
+.intro ul {
+    margin-top: 5vh;
+    list-style: none;
+}
+
+.intro li, .contact li {
+    display: inline;
+}
+
+.intro li {
+    border: solid;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 1vw;
+}
+
+.intro li:hover {
+    background: black;
+    color: white;
+    border: none;
+}
+
+@media (max-width:1050px) {
+    .intro {
+        top: 10vh
+    }
+    .intro h1 {
+        font-size: 16vw;
+    }
+    .intro li {
+        font-size: 2rem;
+        padding: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:500px) {
+    .intro li {
+        display: block;
+        margin: auto;
+        margin-top: 2vh;
+        width: max-content;
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

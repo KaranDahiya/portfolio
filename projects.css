@@ -1,0 +1,181 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url("assets/star_sky.jpg");
+    height: 100vh;
+    width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid {
+    padding: 0;
+    height: 100%;
+}
+
+.spacer {
+    height: 300px;
+}
+
+.navbar-brand {
+    letter-spacing: 0.2em;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a:hover {
+    color: black!important;
+}
+
+.page-title {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.page-title h1 {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+.page-title button {
+    position: absolute;
+    display: block;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.page-title .fa-angle-double-down {
+    color: white;
+    font-size: 4rem;
+    visibility: hidden;
+}
+
+.page-title .fa-angle-double-down:hover {
+    color: black;
+}
+
+.col-10 {
+    padding: 0;
+}
+
+.card {
+    padding: 25px;
+    margin: auto;
+    width: 60vw;
+    border: solid!important;
+    border-color: white!important;
+    border-width: 25px!important;
+    background: lightgray;
+    visibility: hidden;
+}
+
+.card-body h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.card-body p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+}
+
+.card-body a {
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: black;
+}
+
+.card-img {
+    max-width: 400px;
+}
+
+.card-img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h5, .contact a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.contact p {
+    display: none;
+    font-weight: bold;
+    color: white;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.contact li {
+    display: inline;
+}
+
+.contact i {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+.contact i:hover {
+    color: black;
+}
+
+@media (max-width:500px) {
+    .page-title h1 {
+        font-size: 3rem;
+    }
+    .page-title .fa-angle-double-down {
+        font-size: 2.5rem;
+    }
+    .card {
+        padding: 15px;
+        width: 90vw;
+        border: solid!important;
+        border-color: white!important;
+        border-width: 15px!important;
+        background: lightgray;
+        visibility: hidden;
+    }
+    .card-body h3, p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .page-title h1 {
+        font-size: 5rem;
+    }
+}
