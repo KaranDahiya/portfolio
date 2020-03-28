@@ -184,6 +184,9 @@ a:hover {
     .page-title button {
         bottom: 30%;
     }
+    .page-title .fa-angle-double-down {
+        font-size: 2rem;
+    }
     .card {
         padding: 15px;
         width: 90vw;

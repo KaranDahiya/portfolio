@@ -71,7 +71,7 @@ i {
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:1050px) {
     body {
         overflow-x: visible;
     }
@@ -171,6 +171,6 @@ i {
         padding: 10px;
     }
     .contact {
-        bottom: 5vh;
+        top: 90vh;
     }
 }
