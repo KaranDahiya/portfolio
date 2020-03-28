@@ -72,6 +72,9 @@ i {
 }
 
 @media (max-width:500px) {
+    body {
+        overflow-x: visible;
+    }
     .container img {
         top: 0;
         left: 0;
@@ -79,7 +82,6 @@ i {
         width: 100%;
         animation: reveal 1s ease forwards
     }
-    
     .container video {
         top: 0;
         left: 0;
