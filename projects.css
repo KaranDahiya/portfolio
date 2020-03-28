@@ -164,13 +164,14 @@ a:hover {
 
 @media (max-width:500px) {
     .page-title h1 {
+        top: 45%;
         font-size: 3rem;
     }
     .page-title button {
         bottom: 30%;
     }
-    .page-title .fa-angle-double-down {
-        font-size: 2rem;
+    .page-title button {
+        display: none;
     }
     .card {
         padding: 15px;
