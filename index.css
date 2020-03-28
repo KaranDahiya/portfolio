@@ -71,7 +71,7 @@ i {
     }
 }
 
-/* @media (max-width:1200px) {
+@media (max-width:500px) {
     .container img {
         top: 0;
         left: 0;
@@ -87,7 +87,7 @@ i {
         width: 100%;
         animation: reveal 3s ease 1s forwards;
     }
-} */
+}
 
 /* FOREGROUND STYLING */
 
