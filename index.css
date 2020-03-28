@@ -168,4 +168,7 @@ i {
         font-size: 1rem;
         padding: 10px;
     }
+    .contact {
+        bottom: 5vh;
+    }
 }
