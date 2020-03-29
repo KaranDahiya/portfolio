@@ -16,10 +16,10 @@ h1, h3, .name, .navbar-brand, .about_header {
     letter-spacing: 0.2em;
 }
 
-a:hover {
-    color: black;
-    cursor: pointer;
-    text-decoration: none;
+.nav-link:hover, .navbar-brand:hover, a:hover {
+    color: black!important;
+    cursor: pointer!important;
+    text-decoration: none!important;
 }
 
 .showcase {
