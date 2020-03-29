@@ -3,31 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- FontAwesome Icons -->
     <script src="https://kit.fontawesome.com/3f47226ce1.js" crossorigin="anonymous"></script>
-    <title>karan's portfolio</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,400,500,600,700|Josefin+Slab:100,300,400,600,700&display=swap" rel="stylesheet">
+    <!-- my CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Karan's Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <div class="intro">
-            <h1 id="titlename">karan</h1>
-            <ul>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="about.html">ABOUT ME</a></li>
-            </ul>
+
+    <!-- navigation bar -->
+    
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg py-3 px-0">
+                <a onclick="scrollToLanding()" class="navbar-brand">portfolio</a>
+                <button class="navbar-toggler py-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center pt-3 pt-lg-0 ml-auto">
+                        <li class="nav-item">
+                            <a onclick="scrollToProjects()" class="nav-link">projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="assets/resume.pdf" target="_blank">resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="scrollToAbout()" class="nav-link">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="contact">
-            <p class="emailText">k4dahiya@uwaterloo.ca</p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/karan-dahiya-aabb7b164" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/KaranDahiya" target="_blank"><i class="fab fa-github-alt"></i></a></li>
-                <li><a href="#" class="emailLink"><i class="fas fa-at"></i></a></li>
-            </ul>
+    </header>
+
+    <!-- content -->
+
+    <main>
+        
+        <!-- landing -->
+        <section class="container my-5" id="landing">
+            <div class="row justify-content-lg-between align-items-lg-center py-5">
+                <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-left">
+                    <h1 class="display-1 mb-4 name">karan</h1>
+                    <h2 class="typewriter mb-4"></h2>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                    <img class="img-fluid" src="assets/logo_full_white.png" alt="logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section class="container my-5" id="projects">
+            <div class="row py-5">
+                
+                <!-- sketchbook -->
+                <div class="col-lg-6 mb-5" data-aos="fade-in" data-aos-duration="2000">
+                    <a href="https://karandahiya.github.io/sketchbook/" target="_blank">
+                        <img class="img-fluid img-thumbnail img-thumbnail-hover mb-4 showcase" src="assets/sketchbook_screenshot_wide.jpg" alt="sketchbook thumbnail">
+                        <h3 class="text-center">sketchbook</h3>
+                        <p class="text-center">Bootstrap, JavaScript, HTML/CSS</p>
+                    </a>
+                </div>
+
+                <!-- COVID-19 -->
+                <div class="col-lg-6 mb-5" data-aos="fade-in" data-aos-duration="2000">
+                    <a href="https://karandahiya.github.io/COVID-19-visualization/" target="_blank">
+                        <img class="img-fluid img-thumbnail img-thumbnail-hover mb-4 showcase" src="assets/covid_screenshot_wide.jpg" alt="COVID-19 thumbnail">
+                        <h3 class="text-center">COVID-19 visualization</h3>
+                        <p class="text-center">p5.js, JavaScript, HTML/CSS</p>
+                    </a>
+                </div>
+
+                <!-- philosophy -->
+                <div class="col-lg-6 mb-5" data-aos="fade-in" data-aos-duration="2000">
+                    <a href="https://github.com/karandahiya/philosophy-quotes-API" target="_blank">
+                        <img class="img-fluid img-thumbnail img-thumbnail-hover mb-4 showcase" src="assets/quotes_screenshot_wide.jpg" alt="philosophy thumbnail">
+                        <h3 class="text-center">philosophy API</h3>
+                        <p class="text-center">Node.js, Express, MongoDB</p>
+                    </a>
+                </div>
+
+                <!-- solar panel -->
+                <div class="col-lg-6 mb-5" data-aos="fade-in" data-aos-duration="2000">
+                    <a href="https://github.com/KaranDahiya/Solar-Panel-Moving-Platform" target="_blank">
+                        <img class="img-fluid img-thumbnail img-thumbnail-hover mb-4 showcase" src="assets/solar_panel.JPG" alt="solar panel thumbnail">
+                        <h3 class="text-center">solar panel tracker</h3>
+                        <p class="text-center">C, C++, Arduino, Raspberry Pi</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- about -->
+    <footer class="mt-5">
+        <div class="container" id="about">
+
+            <!-- description -->
+            <div class="row justify-content-left align-items-center" data-aos="fade-in">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <h1 class="mb-3 about-header">Hey, I'm Karan.</h1>
+                    <p>I'm a computer engineering student at the University of Waterloo. I like to create with code. Whether it's generative art, websites, or apps, I have an enthusiasm to build software and work with awesome people.<br><br>Besides programming, I enjoy tennis, philosophy, drawing, and making people laugh. If you think I'd be a good fit for your team or project, I'd love to get in touch!</p>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center mb-2 d-none d-lg-block">
+                    <img class="img-fluid" src="assets/logo_point.png" alt="pointing hand">
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- contact -->
+            <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center py-1">
+                <div class="mb-3">© Karan Dahiya 2020</div>
+                <ul class="list-inline">
+                    <li class="list-inline-item">k4dahiya@uwaterloo.ca</li>
+                    <li class="list-inline-item ml-3">
+                        <a href="https://github.com/KaranDahiya/" target="_blank">
+                            <i class="fab fa-github-alt"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://linkedin.com/in/karan-dahiya-aabb7b164/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://goodreads.com/user/show/105989519-karan-dahiya" target="_blank">
+                            <i class="fab fa-goodreads-g"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <img src="./assets/hands-final.jpg" alt="">
-        <video controls autoplay muted loop src="./assets/stars.mp4" type="video/mp4"></video>
-    </div>
-    <script src="index.js"></script>
+    </footer>
+
+    <!-- my javascript -->
+    <script src="main.js"></script>
 </body>
 </html>

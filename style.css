@@ -1,158 +1,36 @@
-body, html, .container-fluid {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-#wrapper {
-	overflow-x: hidden;
-	position: relative;
-}
-
-a {
-	cursor: pointer;
-}
-
-.nav-link:hover, .navbar-brand:hover, .scroll:hover, .fas:hover {
-	color: #ff5757!important;
-}
-
-.intro {
+*, a, .typewriter {
     color: white;
-	font-family: 'Josefin Sans';
-	font-size: 5rem;
-	font-weight: 600;
-	letter-spacing: .15em;
-	min-height: 300px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 
-#parallax {
-	background-image: url("images/purple_sky_background.jpg");
-	height: 100vh;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+body {
+    background-color: #8E7CC3;
 }
 
-img {
-	max-width: 500px;
+h1, h3, .name, .navbar-brand, .about_header {
+    font-weight: 700;
 }
 
-.project-title {
-	max-width: 500px;
-}
-  
-.overlay {
-	margin: auto;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	max-width: 500px;
-	max-height: 500px;
-	opacity: 0;
-	visibility: hidden;
-	transition: .5s ease;
-	background-color: #ff5757;
-	text-align: center;
+.name {
+    letter-spacing: 0.2em;
 }
 
-.overlay a {
-	position: absolute;
-	top: 40%;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	color: white;
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: .1em;
-	font-size: 2rem;
-	text-decoration: none;
-	opacity: 1;
+a:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.showcase-container {
-	max-width: 500px;
-	margin: auto;
-}
-  
-.showcase-container:hover .overlay {
-	opacity: 1;
-	visibility: visible;
+.showcase {
+    box-shadow: 0px 2.5px 25px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 2.5px 25px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2.5px 55px 0px rgba(0,0,0,0.5);
 }
 
-.fab, .fas {
-	font-size: 30px;
-	color: black;
-}
-
-.fa-chevron-down {
-	visibility: hidden;
-}
-
-.navbar-brand {
-	color: black;
-	font-family: 'Josefin Sans';
-	font-size: 2rem;
-	font-weight: 500;
-}
-
-.main-nav {
-	color: black;
-	font-family: 'Josefin Sans';
-	font-size: 1.25rem;
-	font-weight: 500;
-}
-
-.spacer {
-	height: 100px;
-}
-
-.contact {
-	color: black;
-	font-family: 'Josefin Sans';
-	font-size: 2rem;
-	font-weight: 600;
-	letter-spacing: .15em;
-}
-
-.social-icons {
-	display: inline;
-	padding: 0;
-}
-
-.social-icons li {
-	display: inline;
-}
-
-@media (max-width: 600px) {
-	body {
-		overflow-x: hidden;
-	}
-	img, .overlay, .showcase-container {
-		max-width: 300px;
-	}
-	.project-title {
-		max-width: 300px;
-	}
-	.spacer {
-		max-height: 50px;
-	}
-	#parallax {
-		background-attachment: scroll;
-	}
-	.intro {
-		font-size: 3rem;
-	}
-	.intro-spacer {
-		max-height: 200px;
-	}
-}
-
-@media (max-height: 650px) {
-	.fa-chevron-down {
-		visibility: hidden!important;
-	}
+.showcase:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 2.5px 55px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 2.5px 55px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2.5px 55px 0px rgba(0,0,0,0.5);
 }

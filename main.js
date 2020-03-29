@@ -1,31 +1,31 @@
 // initialize animations
 AOS.init();
 
-// smooth scroll to WORK
-function scrollToWork() {
-    document.querySelector('#scrollWorkTarget').scrollIntoView({ 
+// smooth scroll to PROJECTS
+function scrollToProjects() {
+    document.querySelector('#projects').scrollIntoView({ 
     behavior: 'smooth' 
   });
 }
  
-// smooth scroll to CONTACT
-function scrollToContact() {
-    document.querySelector('#scrollContactTarget').scrollIntoView({ 
+// smooth scroll to ABOUT
+function scrollToAbout() {
+    document.querySelector('#about').scrollIntoView({ 
     behavior: 'smooth' 
   });
 }
 
-// smooth scroll to HOME
-function scrollToHome() {
-    document.querySelector('#scrollHomeTarget').scrollIntoView({ 
+// smooth scroll to LANDING
+function scrollToLanding() {
+    document.querySelector('#landing').scrollIntoView({ 
     behavior: 'smooth' 
   });
 }
 
 // typewriter effect
-const introText = "karan." + "dahiya." + "portfolio." + "welcome.";
+const introText = "engineering." + "development." + "design.";
 var i = 0;
-speed = 125;
+speed = 45;
 setTimeout(typewriter, 1000);
 
 function typewriter() {
@@ -36,6 +36,4 @@ function typewriter() {
     i++;
     setTimeout(typewriter, speed);
   }
-  else 
-    document.querySelector('.fa-chevron-down').style.visibility = "visible";
 }
