@@ -26,6 +26,7 @@ h1, h3, .name, .navbar-brand, .about_header {
     box-shadow: 0px 2.5px 25px 0px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0px 2.5px 25px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 2.5px 55px 0px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
 }
 
 .showcase:hover {
