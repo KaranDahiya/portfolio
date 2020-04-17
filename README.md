@@ -1,6 +1,10 @@
-# portfolio
-Developer Project Portfolio
+# Portfolio
+**Description**
 
-I use this website to showcase some of my projects to employers.
+A portfolio website to showcase some of my projects to employers
 
-It was made with **Bootstrap, JavaScript, CSS and HTML**
+**Technologies**
+
+- Bootstrap
+- JavaScript ES6
+- HTML/CSS
